@@ -42,7 +42,7 @@ jobs:
       # Step: Terraform Init
       - name: Terraform Init
         run: | 
-          cd ./infra/environments/${{ github.event.inputs.environment || 'dev' }}
+          cd ./Infra/environments/${{ github.event.inputs.environment || 'dev' }}
           terraform init
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
