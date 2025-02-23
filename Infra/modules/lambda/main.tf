@@ -1,7 +1,7 @@
 # Create a zip file with function code
 data "archive_file" "lambda_zip" {
   type        = "zip"
-  source_file = "modules/lambda/index.mjs"
+  source_file = "https://github.com/agarapunaveen/NSH-usecase-SQS/blob/main/Infra/modules/lambda/index.mjs"
   output_path = "lambda.zip"
 }
 
